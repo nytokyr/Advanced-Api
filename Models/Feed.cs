@@ -2,8 +2,7 @@
 
 namespace Advanced_Api.Models
 {
-    public partial class FeedAgregate
-    {
+   
         public class Feed
         {
             public int Id { get; set; }
@@ -29,5 +28,5 @@ namespace Advanced_Api.Models
             public object Msg { get; set; }
         }
 
-    }
+   
 }

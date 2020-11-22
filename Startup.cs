@@ -1,3 +1,5 @@
+using Advanced_Api.Data;
+using Advanced_Api.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,6 +28,7 @@ namespace Advanced_Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddScoped<IDataSource, JSonDataSource>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,12 +1,10 @@
-﻿using System;
+﻿using Advanced_Api.Models;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Advanced_Api.Interfaces
 {
-    interface IDataSource
+    public interface IDataSource
     {
-
+        IEnumerable<Feed> GetFeeds();
     }
 }

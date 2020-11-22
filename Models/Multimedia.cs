@@ -2,8 +2,7 @@
 
 namespace Advanced_Api.Models
 {
-    public partial class FeedAgregate
-    {
+   
         public class Multimedia
         {
             public int Id { get; set; }
@@ -16,5 +15,5 @@ namespace Advanced_Api.Models
             public DateTime CreateAt { get; set; }
         }
 
-    }
+   
 }
