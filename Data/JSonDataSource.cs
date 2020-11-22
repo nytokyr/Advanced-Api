@@ -8,9 +8,9 @@ namespace Advanced_Api.Data
 {
     public class JSonDataSource : IDataSource
     {
-        private readonly IHostingEnvironment _hostingEnvironment;
+        private readonly IWebHostEnvironment _hostingEnvironment;
 
-        public JSonDataSource(IHostingEnvironment hostingEnvironment)
+        public JSonDataSource(IWebHostEnvironment hostingEnvironment)
         {
             _hostingEnvironment = hostingEnvironment;
         }
