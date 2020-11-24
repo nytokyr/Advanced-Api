@@ -53,14 +53,10 @@ namespace Advanced_Api
 
             app.UseMvc(routeBuilder =>
             {
-                routeBuilder.Select().Filter();
+                routeBuilder.Select().Expand().Filter().OrderBy().MaxTop(100).Count();
                 routeBuilder.MapODataServiceRoute("odata", "odata", GetEdmModel());
             });
 
-            //app.UseEndpoints(endpoints =>
-            //{
-            //    endpoints.MapControllers();
-            //});
         }
 
         IEdmModel GetEdmModel()
