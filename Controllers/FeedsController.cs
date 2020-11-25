@@ -2,7 +2,6 @@
 using Advanced_Api.Models;
 using Microsoft.AspNet.OData;
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
 using System.Linq;
 
 namespace Advanced_Api.Odata.Controllers
